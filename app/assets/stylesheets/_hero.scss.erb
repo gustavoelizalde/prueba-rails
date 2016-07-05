@@ -12,6 +12,35 @@ section.hero {
 		background: url(<%= asset_path 'superman.jpg' %>) top center no-repeat;
 	}
 
+	article.half-screen {
+		width: 50%;
+		float: left;
+		height: 100vh;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		img {
+			height: auto;
+			max-width: 100%;
+		}
+
+		.btn-go {
+			color: white;
+			font-size: 20px;
+			display: block;
+			width: 150px;
+			height: 40px;
+			line-height: 40px;
+			background-color: blue;
+			text-align: center;
+			font-family: 'Roboto', sans-serif;
+			margin: 0 auto;
+			text-decoration: none;
+			@include full-vertical-alignment();
+		}
+	}
+
 	h1 {
 		color: white;
 		font-size: 50px;

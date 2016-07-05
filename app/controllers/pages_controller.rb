@@ -5,4 +5,8 @@ class PagesController < ApplicationController
   def superman
 
   end
+
+  def batman_vs_superman
+  	@nombre = "Gustavo"
+  end
 end
