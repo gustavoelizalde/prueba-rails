@@ -26,4 +26,21 @@ class PagesController < ApplicationController
   	end
 
   end
+
+
+  def totales
+
+    @all_users = Voto.all()
+    
+    @batman_users = @all_users.select do |user|
+      user[:heroe] == "Batman"
+    end
+
+    @superman_users = @all_users.select do |user|
+      user[:heroe] == "Superman"
+    end
+
+
+  end
+
 end

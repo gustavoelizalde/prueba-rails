@@ -1,0 +1,34 @@
+<section class="hero">
+	
+	<article class="half-screen" style="background-image: url(<%= asset_path 'batman.jpg' %>)">
+		
+		<div class="block-content">
+			<h2>Usuarios en Batman: <%= @batman_users.count %></h2>
+			<ul>
+				<% @batman_users.each do |user| %>
+				
+				<li><%= user.email %></li>
+
+				<% end %>
+			</ul>
+		</div>
+
+	</article>
+
+	<article class="half-screen" style="background-image: url(<%= asset_path 'superman.jpg' %>)">
+		
+		<div class="block-content">
+			<h2>Usuarios en Superman: <%= @superman_users.count %></h2>
+			<ul>
+				<% @superman_users.each do |user| %>
+				
+				<li><%= user.email %></li>
+
+				<% end %>
+			</ul>
+		</div>
+		
+
+	</article>
+
+</section>
