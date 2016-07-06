@@ -1,8 +1,11 @@
 body {
 	margin: 0;
-	padding: 100px 0 0 0;
+	padding: 0 0 0 0;
 
-	&.experiments.page3 {
-		background: black;
+	&.experiments {
+		padding: 100px 0 0 0;
+		&.page3 {
+			background: black;
+		}
 	}
 }
