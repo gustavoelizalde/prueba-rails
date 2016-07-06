@@ -1,4 +1,8 @@
 body {
 	margin: 0;
 	padding: 100px 0 0 0;
+
+	&.experiments.page3 {
+		background: black;
+	}
 }
