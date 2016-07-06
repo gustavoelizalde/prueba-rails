@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'pages/batman'
   get 'pages/superman'
   get 'pages/batman_vs_superman'
+  get 'pages/vote'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,14 +1,35 @@
+<% if flash[:notice] %>
+<div class="alert alert-success" role="alert"><%= flash[:notice] %></div>
+<% end %>
+
 <section class="hero">
 	
 	<article class="half-screen" style="background-image: url(<%= asset_path 'batman.jpg' %>)">
 		
-		<a href="<%= pages_batman_path %>" class="btn-go">Ir a Superheroe</a>
+		<div class="block-content">
+			<a href="<%= pages_batman_path %>" class="btn-go">Ir a Superheroe</a>
+			
+			<form action="<%= pages_vote_path %>" method="GET">
+				<input type="hidden" name="heroe" value="Batman">
+				<input type="email" name="email" placeholder="Ingrese su email">
+				<input type="submit" value="Votar">
+			</form>
+		</div>
 
 	</article>
 
 	<article class="half-screen" style="background-image: url(<%= asset_path 'superman.jpg' %>)">
 		
-		<a href="<%= pages_superman_path %>" class="btn-go">Ir a Superheroe</a>
+		<div class="block-content">
+			<a href="<%= pages_superman_path %>" class="btn-go">Ir a Superheroe</a>
+			
+			<form action="<%= pages_vote_path %>" method="GET">
+				<input type="hidden" name="heroe" value="Superman">
+				<input type="email" name="email" placeholder="Ingrese su email">
+				<input type="submit" value="Votar">
+			</form>
+		</div>
+		
 
 	</article>
 
